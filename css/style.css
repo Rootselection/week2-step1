@@ -1,5 +1,7 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
   }
   *,
   *::after,
@@ -36,7 +38,7 @@ html{
 
   }
   section {
-    padding-bottom: 200px;
+    margin-bottom: 200px;
   }
   .container {
     max-width: 1220px;
@@ -116,6 +118,15 @@ html{
   }
   .header__mouse {
     margin-bottom: 93px;
+  }
+  .header__mouse svg {
+    transition: .4s ease;
+    fill: #fff;
+  }
+  .header__mouse svg:hover {
+    transform: scale(1.2);
+    fill: #01353E;
+    text-shadow: 0 0 10px #01353E;
   }
   .about {
 
